@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.custom.recents'
+    compileSdk 34
+    
+    defaultConfig {
+        applicationId "com.custom.recents"
+        minSdk 30  // Android 11+
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+    }
+    
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+//    sourceSets {
+//        main {
+//            java.srcDirs = ['src/main/java']
+//            res.srcDirs = ['src/main/res']
+//            manifest.srcFile 'src/main/AndroidManifest.xml'
+//        }
+//    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+}

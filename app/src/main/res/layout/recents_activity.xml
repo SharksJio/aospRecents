@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main Recents Activity Layout -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0000000">
+
+    <!-- Recents container (will hold task views) -->
+    <LinearLayout
+        android:id="@+id/recents_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+        
+        <!-- Placeholder for now - will add RecentsView later -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Standalone Recents"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center" />
+            
+    </LinearLayout>
+
+    <!-- Overview Actions (Screenshot/Select/Split buttons) -->
+    <include
+        android:id="@+id/overview_actions_view"
+        layout="@layout/overview_actions_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp" />
+
+    <!-- HotSeat Dock (app shortcuts) -->
+    <include
+        android:id="@+id/recents_dock"
+        layout="@layout/recents_hotseat_dock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

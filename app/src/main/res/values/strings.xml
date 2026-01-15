@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Standalone Recents</string>
+    
+    <!-- Overview Actions -->
+    <string name="action_screenshot">Screenshot</string>
+    <string name="action_select">Select</string>
+    <string name="action_split">Split</string>
+    <string name="action_save_app_pair">Save app pair</string>
+    
+    <!-- Accessibility -->
+    <string name="accessibility_recent_apps">Recent apps</string>
+    <string name="all_apps_button_label">All apps</string>
+    
+    <!-- Empty state -->
+    <string name="recents_empty_message">No recent items</string>
+</resources>

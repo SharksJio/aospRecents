@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Overview Actions -->
+    <dimen name="overview_actions_height">48dp</dimen>
+    <dimen name="overview_actions_button_spacing">16dp</dimen>
+    <dimen name="overview_actions_top_margin">24dp</dimen>
+    
+    <!-- Recents HotSeat Dock dimensions -->
+    <dimen name="recents_dock_icon_size">56dp</dimen>
+    <dimen name="recents_dock_icon_margin">4dp</dimen>
+    <dimen name="recents_dock_margin_bottom">16dp</dimen>
+</resources>
